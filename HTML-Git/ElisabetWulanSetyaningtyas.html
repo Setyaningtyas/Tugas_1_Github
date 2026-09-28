@@ -5,72 +5,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Wulan | Personal Portfolio</title>
+    <title>About Wulan</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <!-- ================================
+         LOADING SCREEN
+    ================================= -->
+
     <div id="loading-screen">
 
-    <div class="loading-content">
+        <div class="loading-content">
 
-        <div class="loading-logo">
+            <div class="loading-logo">
+                W.
+            </div>
+
+            <p>LOADING...</p>
+
+            <div class="loading-line">
+                <div class="loading-progress"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================
+         NAVBAR
+    ================================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
             W.
         </div>
 
-        <p>LOADING...</p>
+        <button class="menu-button" id="menuButton">
+            ☰
+        </button>
 
-        <div class="loading-line"></div>
+        <nav id="navMenu">
 
-    </div>
+            <a href="#home" class="active">
+                Home
+            </a>
 
-</div>
-    
+            <a href="#about">
+                About
+            </a>
 
-    <!-- NAVBAR -->
-     <nav class="navbar">
+            <a href="#hobbies">
+                Hobbies
+            </a>
 
-    <div class="logo">
-        W.
-    </div>
+            <a href="#portfolio">
+                Portfolio
+            </a>
 
-    <button id="menuButton" class="menu-button">
-        ☰
-    </button>
+            <a href="#activities">
+                Activities
+            </a>
 
-    <div class="nav-menu" id="navMenu">
+            <a href="#contact">
+                Contact
+            </a>
 
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#hobbies">Hobbies</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#activities">Activities</a>
-        <a href="#contact">Contact</a>
+        </nav>
 
-    </div>
-
-</nav>
-    
+    </header>
 
 
-    <!-- HOME -->
-    <section id="home" class="hero">
+    <!-- ================================
+         HOME
+    ================================= -->
 
-        <div class="hero-content">
+    <section class="hero" id="home">
+
+        <div class="hero-text">
 
             <p class="small-text">
-                WELCOME TO MY PORTFOLIO
+                WELCOME TO MY WEBSITE
             </p>
 
             <h1>
-                HELLO, I'M
-                <span>WULAN</span>
+                HELLO,
+                <span>I'M WULAN</span>
             </h1>
 
-            <p>
+            <p class="description">
                 Informatics student who enjoys learning,
-                creating, and exploring new things.
+                creating, exploring new things, and expressing
+                myself through hobbies and experiences.
             </p>
 
             <div class="hero-buttons">
@@ -79,70 +109,174 @@
                     About Me
                 </a>
 
-                <a href="#contact" class="button outline">
-                    Contact Me
+                <a href="#portfolio" class="button outline">
+                    My Portfolio
                 </a>
 
             </div>
 
         </div>
 
-        <div class="hero-decoration">
-            <div class="planet">
-                W.
+
+        <!-- HERO VISUAL -->
+
+        <div class="hero-visual">
+
+            <div class="orbit orbit-one"></div>
+
+            <div class="orbit orbit-two"></div>
+
+            <div class="planet"></div>
+
+
+            <div class="floating-card card-one">
+
+                <span>
+                    STUDENT
+                </span>
+
+                <p>
+                    Informatics
+                </p>
+
             </div>
+
+
+            <div class="floating-card card-two">
+
+                <span>
+                    HOBBY
+                </span>
+
+                <p>
+                    Guitar
+                </p>
+
+            </div>
+
+
+            <div class="floating-card card-three">
+
+                <span>
+                    LOVE
+                </span>
+
+                <p>
+                    Exploring
+                </p>
+
+            </div>
+
         </div>
 
     </section>
 
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
+    <!-- ================================
+         ABOUT
+    ================================= -->
+
+    <section class="section about" id="about">
 
         <div class="section-title">
-            <p>GET TO KNOW ME</p>
-            <h2>About Me</h2>
+
+            <p>
+                GET TO KNOW ME
+            </p>
+
+            <h2>
+                About Me
+            </h2>
+
         </div>
+
 
         <div class="about-content">
 
+
             <div class="about-photo">
-                <img src="Foto Wulan/Wulan 1.jpeg" alt="Foto Wulan">
+
+                <img
+                    src="Foto Wulan/Wulan 1.jpeg"
+                    alt="Foto Elisabet Wulan"
+                >
+
             </div>
+
 
             <div class="about-text">
 
                 <h3>
-                    Hello! I'm Elisabet Wulan Setyaningtyas.
+                    Hi, I'm Elisabet Wulan
                 </h3>
 
                 <p>
-                    Saya adalah mahasiswa Informatika
-                    Universitas Sanata Dharma.
-                    Saya berasal dari Semarang dan sedang
-                    belajar berbagai hal di bidang teknologi.
+                    Saya adalah mahasiswa Informatika di
+                    Universitas Sanata Dharma Yogyakarta.
+                    Saya tertarik dengan dunia teknologi,
+                    pemrograman, dan berbagai hal baru yang
+                    bisa membantu saya berkembang.
                 </p>
+
+                <p>
+                    Selain belajar Informatika, saya juga suka
+                    melakukan berbagai kegiatan dan mempunyai
+                    beberapa hobi seperti hiking, bermain gitar,
+                    dan membuat JJ TikTok.
+                </p>
+
 
                 <div class="info-grid">
 
                     <div>
-                        <span>Nama</span>
-                        <p>Elisabet Wulan Setyaningtyas</p>
+
+                        <span>
+                            Nama
+                        </span>
+
+                        <p>
+                            Elisabet Wulan Setyaningtyas
+                        </p>
+
                     </div>
 
-                    <div>
-                        <span>Program Studi</span>
-                        <p>Informatika</p>
-                    </div>
 
                     <div>
-                        <span>Universitas</span>
-                        <p>Universitas Sanata Dharma</p>
+
+                        <span>
+                            Program Studi
+                        </span>
+
+                        <p>
+                            Informatika
+                        </p>
+
                     </div>
 
+
                     <div>
-                        <span>Asal</span>
-                        <p>Semarang</p>
+
+                        <span>
+                            Universitas
+                        </span>
+
+                        <p>
+                            Universitas Sanata Dharma
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Asal
+                        </span>
+
+                        <p>
+                            Semarang
+                        </p>
+
                     </div>
 
                 </div>
@@ -154,265 +288,529 @@
     </section>
 
 
-    <!-- HOBBIES -->
-    <section id="hobbies" class="section pink-section">
+    <!-- ================================
+         HOBBIES
+    ================================= -->
+
+    <section class="section hobbies" id="hobbies">
 
         <div class="section-title">
-            <p>WHAT I ENJOY</p>
-            <h2>My Hobbies</h2>
+
+            <p>
+                THINGS I ENJOY
+            </p>
+
+            <h2>
+                My Hobbies
+            </h2>
+
         </div>
 
-        <div class="card-grid">
 
-           <article class="card">
+        <div class="hobby-container">
 
-                <img src="Foto Wulan/Wulan Gunung.jpeg" alt="Wulan hiking">
 
-                <h3>Hiking</h3>
+            <!-- HIKING -->
 
-                <p>
-                    Saya suka mendaki gunung dan menikmati
-                    suasana alam.
-                </p>
+            <article class="hobby-card media-card">
+
+                <div class="hobby-media">
+
+                    <img
+                        src="Foto Wulan/Wulan Gunung.jpeg"
+                        alt="Wulan sedang hiking"
+                    >
+
+                </div>
+
+                <div class="hobby-content">
+
+                    <p class="hobby-number">
+                        01 / HOBBY
+                    </p>
+
+                    <h3>
+                        Hiking
+                    </h3>
+
+                    <p>
+                        Saya suka menikmati perjalanan,
+                        suasana alam, dan pemandangan dari
+                        ketinggian.
+                    </p>
+
+                </div>
 
             </article>
 
 
-            <article class="card">
+            <!-- JJ TIKTOK -->
 
-                <video autoplay muted loop playsinline>
-                    <source src="Video/Wulan Gitar.mp4" type="video/mp4">
-                </video>
+            <article class="hobby-card media-card">
 
-                <h3>Playing Guitar</h3>
+                <div class="hobby-media video-media">
 
-                <p>
-                    Saya suka bermain gitar dan menikmati
-                    musik di waktu luang.
-                </p>
+                    <video
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                    >
+
+                        <source
+                            src="Video/Wulan JJ.mp4"
+                            type="video/mp4"
+                        >
+
+                        Browser kamu tidak mendukung video.
+
+                    </video>
+
+                </div>
+
+                <div class="hobby-content">
+
+                    <p class="hobby-number">
+                        02 / HOBBY
+                    </p>
+
+                    <h3>
+                        Bikin JJ TikTok
+                    </h3>
+
+                    <p>
+                        Salah satu kegiatan yang saya suka
+                        adalah membuat JJ TikTok sebagai
+                        cara untuk bersenang-senang dan
+                        mengekspresikan diri.
+                    </p>
+
+                </div>
 
             </article>
+
+
+            <!-- GITAR -->
+
+            <article class="hobby-card media-card">
+
+                <div class="hobby-media video-media">
+
+                    <video
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                    >
+
+                        <source
+                            src="Video/Wulan Gitar.mp4"
+                            type="video/mp4"
+                        >
+
+                        Browser kamu tidak mendukung video.
+
+                    </video>
+
+                </div>
+
+                <div class="hobby-content">
+
+                    <p class="hobby-number">
+                        03 / HOBBY
+                    </p>
+
+                    <h3>
+                        Main Gitar
+                    </h3>
+
+                    <p>
+                        Bermain gitar menjadi salah satu
+                        cara saya menikmati waktu luang.
+                        Salah satu lagu yang saya suka adalah
+                        Stand By Me dari Oasis.
+                    </p>
+
+                </div>
+
+            </article>
+
 
         </div>
 
     </section>
 
 
-    <!-- PORTFOLIO -->
-    <section id="portfolio" class="section">
+    <!-- ================================
+         PORTFOLIO
+    ================================= -->
+
+    <section class="section portfolio" id="portfolio">
 
         <div class="section-title">
-            <p>MY WORK</p>
-            <h2>Portfolio</h2>
+
+            <p>
+                WHAT I'VE BEEN LEARNING
+            </p>
+
+            <h2>
+                My Portfolio
+            </h2>
+
         </div>
 
-        <div class="card-grid">
 
-            <article class="portfolio-card">
-
-                <span>01</span>
-
-                <h3>Personal Website</h3>
-
-                <p>
-                    Membuat website personal menggunakan
-                    HTML, CSS, dan JavaScript.
-                </p>
-
-            </article>
+        <div class="portfolio-container">
 
 
             <article class="portfolio-card">
 
-                <span>02</span>
+                <div class="portfolio-number">
+                    01
+                </div>
 
-                <h3>Java Programming</h3>
+                <div>
 
-                <p>
-                    Mengerjakan berbagai tugas pemrograman
-                    menggunakan bahasa Java.
-                </p>
+                    <p class="portfolio-category">
+                        WEB DEVELOPMENT
+                    </p>
+
+                    <h3>
+                        Personal Website
+                    </h3>
+
+                    <p>
+                        Website pribadi yang dibuat menggunakan
+                        HTML, CSS, JavaScript, Git, dan GitHub.
+                    </p>
+
+                </div>
 
             </article>
 
 
             <article class="portfolio-card">
 
-                <span>03</span>
+                <div class="portfolio-number">
+                    02
+                </div>
 
-                <h3>Machine Learning</h3>
+                <div>
 
-                <p>
-                    Mempelajari pengolahan dataset dan
-                    machine learning.
-                </p>
+                    <p class="portfolio-category">
+                        PROGRAMMING
+                    </p>
 
-            </article>
-            <article class="card">
+                    <h3>
+                        Java Programming
+                    </h3>
 
-                <video autoplay muted loop playsinline>
-                    <source src="Video/Wulan JJ.mp4" type="video/mp4">
-                </video>
+                    <p>
+                        Mengerjakan berbagai latihan dan proyek
+                        pemrograman menggunakan Java.
+                    </p>
 
-                <h3>Learning</h3>
-
-                <p>
-                    Saya senang belajar hal baru,
-                    terutama yang berhubungan dengan Informatika.
-                </p>
+                </div>
 
             </article>
+
+
+            <article class="portfolio-card">
+
+                <div class="portfolio-number">
+                    03
+                </div>
+
+                <div>
+
+                    <p class="portfolio-category">
+                        MACHINE LEARNING
+                    </p>
+
+                    <h3>
+                        Machine Learning
+                    </h3>
+
+                    <p>
+                        Belajar melakukan analisis data dan
+                        menerapkan konsep machine learning
+                        pada berbagai dataset.
+                    </p>
+
+                </div>
+
+            </article>
+
 
         </div>
 
     </section>
 
 
-    <!-- ACTIVITIES -->
-    <section id="activities" class="section pink-section">
+    <!-- ================================
+         ACTIVITIES
+    ================================= -->
+
+    <section class="section activities" id="activities">
 
         <div class="section-title">
-            <p>WHAT I'VE DONE</p>
-            <h2>Activities</h2>
+
+            <p>
+                THINGS I'VE EXPERIENCED
+            </p>
+
+            <h2>
+                My Activities
+            </h2>
+
         </div>
 
-        <div class="card-grid">
-            <article class="card">
 
-                <img src="Foto Wulan/Wulan Dampok.jpeg" alt="Dampok INSADHA">
+        <div class="activity-container">
 
-                <h3>Dampok INSADHA 2026</h3>
 
-                <p>
-                    Kakak pendamping kelompok dalam
-                    kegiatan INSADHA 2026.
-                </p>
+            <!-- DAMPOK -->
+
+            <article class="activity-card">
+
+                <div class="activity-image">
+
+                    <img
+                        src="Foto Wulan/Wulan Dampok.jpeg"
+                        alt="Dampok INSADHA 2026"
+                    >
+
+                </div>
+
+                <div class="activity-content">
+
+                    <span>
+                        01
+                    </span>
+
+                    <h3>
+                        Dampok INSADHA 2026
+                    </h3>
+
+                    <p>
+                        Pengalaman menjadi bagian dari kegiatan
+                        Dampok INSADHA 2026 dan ikut terlibat
+                        dalam kegiatan bersama mahasiswa baru.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- KPU -->
+
+            <article class="activity-card">
+
+                <div class="activity-image">
+
+                    <img
+                        src="Foto Wulan/Wulan KPU.jpeg"
+                        alt="Moderator KPU FST 2026"
+                    >
+
+                </div>
+
+                <div class="activity-content">
+
+                    <span>
+                        02
+                    </span>
+
+                    <h3>
+                        Moderator KPU FST 2026
+                    </h3>
+
+                    <p>
+                        Pengalaman menjadi moderator dalam
+                        kegiatan KPU FST 2026 dan belajar
+                        berkomunikasi di depan banyak orang.
+                    </p>
+
+                </div>
 
             </article>
 
-            <article class="card">
 
-                <img src="Foto Wulan/Wulan KPU.jpeg" alt="Moderator KPU FST">
+            <!-- IF BELAJAR -->
 
-                <h3>Moderator KPU FST 2026</h3>
+            <article class="activity-card">
 
-                <p>
-                    Moderator dalam kegiatan KPU
-                    Fakultas Sains dan Teknologi.
-                </p>
+                <div class="activity-image">
+
+                    <img
+                        src="Foto Wulan/Wulan IF.jpeg"
+                        alt="Pengajar IF Belajar"
+                    >
+
+                </div>
+
+                <div class="activity-content">
+
+                    <span>
+                        03
+                    </span>
+
+                    <h3>
+                        Pengajar IF Belajar
+                    </h3>
+
+                    <p>
+                        Berbagi pengetahuan mengenai dasar
+                        pemrograman dan membantu teman-teman
+                        belajar Informatika.
+                    </p>
+
+                </div>
 
             </article>
 
-
-            <article class="card">
-
-                <img src="Foto Wulan/Wulan IF.jpeg" alt="IF Belajar">
-
-                <h3>Pengajar IF Belajar</h3>
-
-                <p>
-                    Membantu kegiatan pembelajaran
-                    dasar Informatika.
-                </p>
-
-            </article>
 
         </div>
 
     </section>
 
 
-    <!-- EDUCATION -->
-    <section id="education" class="section">
+    <!-- ================================
+         EDUCATION
+    ================================= -->
+
+    <section class="section education" id="education">
 
         <div class="section-title">
-            <p>MY JOURNEY</p>
-            <h2>Education</h2>
+
+            <p>
+                MY JOURNEY
+            </p>
+
+            <h2>
+                Education
+            </h2>
+
         </div>
+
 
         <div class="timeline">
 
-            <div class="timeline-item">
-                <span>2013–2019</span>
-                <h3>SDN Rejosari</h3>
-            </div>
 
             <div class="timeline-item">
-                <span>2019–2022</span>
-                <h3>SMP Theresiana Jambu</h3>
+
+                <span>
+                    2013 — 2019
+                </span>
+
+                <h3>
+                    SDN Rejosari
+                </h3>
+
             </div>
 
-            <div class="timeline-item">
-                <span>2022–2025</span>
-                <h3>SMA Sedes Sapientiae Jambu</h3>
-            </div>
 
             <div class="timeline-item">
-                <span>2025–Sekarang</span>
-                <h3>Universitas Sanata Dharma</h3>
+
+                <span>
+                    2019 — 2022
+                </span>
+
+                <h3>
+                    SMP Theresiana Jambu
+                </h3>
+
             </div>
+
+
+            <div class="timeline-item">
+
+                <span>
+                    2022 — 2025
+                </span>
+
+                <h3>
+                    SMA Sedes Sapientiae Jambu
+                </h3>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <span>
+                    2025 — Sekarang
+                </span>
+
+                <h3>
+                    Universitas Sanata Dharma
+                </h3>
+
+            </div>
+
 
         </div>
 
     </section>
 
 
-    <!-- CONTACT -->
-    <section id="contact" class="section contact-section">
+    <!-- ================================
+         CONTACT
+    ================================= -->
 
-        <div class="section-title">
-            <p>LET'S CONNECT</p>
-            <h2>Contact Me</h2>
-        </div>
+   <section class="section contact" id="contact">
 
-        <div class="contact-grid">
+    <h2>Contact Me</h2>
 
-            <a href="#" class="contact-card">
+    <p>
+        Kamu bisa menemukan saya melalui beberapa platform berikut.
+    </p>
 
-                <img src="Foto Wulan/Wulan Instagram.jpeg"
-                    alt="Instagram Wulan">
+    <div class="contact-container">
 
-                <h3>Instagram</h3>
-                <p>@ethn_u14</p>
+        <a href="LINK_INSTAGRAM" target="_blank" class="contact-card">
+            <img src="Foto Wulan/Wulan Instagram.jpeg" alt="Instagram Wulan">
+            <h3>Instagram</h3>
+            <p>@ethn_u14</p>
+        </a>
 
-            </a>
+        <a href="LINK_TIKTOK" target="_blank" class="contact-card">
+            <img src="Foto Wulan/Wulan Tiktok.jpeg" alt="TikTok Wulan">
+            <h3>TikTok</h3>
+            <p>@shutupmalfoyy</p>
+        </a>
+
+        <a href="LINK_SPOTIFY" target="_blank" class="contact-card">
+            <img src="Foto Wulan/Wulan Spotify.jpeg" alt="Spotify Wulan">
+            <h3>Spotify</h3>
+            <p>uuuuuuuuuuuuuu14</p>
+        </a>
+
+    </div>
+
+</section>
 
 
-            <a href="#" class="contact-card">
-
-                <img src="Foto Wulan/Wulan Tiktok.jpeg"
-                    alt="TikTok Wulan">
-
-                <h3>TikTok</h3>
-                <p>@shutupmalfoyy</p>
-
-            </a>
-
-
-            <a href="#" class="contact-card">
-
-                <img src="Foto Wulan/Wulan Spotify.jpeg"
-                    alt="Spotify Wulan">
-
-                <h3>Spotify</h3>
-                <p>uuuuuuuuuuuuuu14</p>
-
-            </a>
-
-        </div>
-
-        </div>
-
-    </section>
-
+    <!-- ================================
+         FOOTER
+    ================================= -->
 
     <footer>
+
         <p>
             © 2026 Elisabet Wulan Setyaningtyas
         </p>
+
+        <p>
+            Made with HTML, CSS & JavaScript
+        </p>
+
     </footer>
 
-<script src="script.js"></script>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
