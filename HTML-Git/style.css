@@ -475,3 +475,164 @@ footer {
     border-radius: 50%;
     margin-bottom: 20px;
 }
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        width: 94%;
+    }
+
+    .nav-menu {
+        gap: 15px;
+    }
+
+    .hero {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .hero-decoration {
+        width: 280px;
+        height: 280px;
+    }
+
+    .planet {
+        width: 180px;
+        height: 180px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* TABLET */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        position: absolute;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-photo {
+        margin-bottom: 20px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* HP */
+
+@media (max-width: 480px) {
+
+    .navbar {
+        width: 92%;
+        padding: 12px 18px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav-menu {
+        gap: 8px;
+    }
+
+    .nav-menu a {
+        font-size: 11px;
+    }
+
+    .hero {
+        padding: 110px 6% 60px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .small-text {
+        font-size: 10px;
+    }
+
+    .hero-decoration {
+        width: 220px;
+        height: 220px;
+    }
+
+    .planet {
+        width: 150px;
+        height: 150px;
+        font-size: 40px;
+    }
+
+    .section {
+        padding: 80px 6%;
+    }
+
+    .section-title h2 {
+        font-size: 35px;
+    }
+
+    .about-photo img {
+        width: 240px;
+        height: 310px;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    .contact-card {
+        padding: 30px 15px;
+    }
+
+}
