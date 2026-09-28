@@ -1,7 +1,3 @@
-/* =========================
-   DASAR WEBSITE
-========================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -16,225 +12,458 @@ body {
     font-family: Arial, sans-serif;
     background: #fff8fb;
     color: #3d3035;
-    line-height: 1.6;
 }
 
 
-/* =========================
-   HEADER
-========================= */
+/* NAVBAR */
 
-header {
-    background: #e9a9c2;
-    padding: 30px;
-    text-align: center;
-}
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 
-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-header p {
-    color: #ffffff;
-}
-
-
-/* =========================
-   NAVIGATION
-========================= */
-
-nav {
-    margin-top: 20px;
-}
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 12px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #3d3035;
-}
-
-
-/* =========================
-   MAIN
-========================= */
-
-main {
+    width: 90%;
     max-width: 1100px;
-    margin: auto;
+
+    padding: 15px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border-radius: 50px;
+
+    box-shadow: 0 10px 30px rgba(201, 120, 155, 0.15);
+
+    z-index: 1000;
 }
 
-section {
-    padding: 80px 40px;
-    min-height: 300px;
-}
-
-section h2 {
+.logo {
+    font-size: 28px;
+    font-weight: bold;
     color: #c9789b;
-    font-size: 32px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu a {
+    color: #3d3035;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-menu a:hover {
+    color: #c9789b;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 120px 10% 80px;
+
+    background:
+        radial-gradient(
+            circle at 80% 40%,
+            #f7d9e4,
+            #fff8fb 45%
+        );
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.small-text {
+    color: #c9789b;
+    letter-spacing: 3px;
+    font-size: 13px;
     margin-bottom: 20px;
 }
 
-section h3 {
+.hero h1 {
+    font-size: 70px;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
     color: #d88ca9;
-    margin-top: 20px;
+}
+
+.hero-content > p {
+    color: #806f76;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 25px;
+
+    background: #d88ca9;
+    color: white;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #c9789b;
+}
+
+.button.outline {
+    background: transparent;
+    color: #c9789b;
+    border: 1px solid #d88ca9;
+}
+
+
+/* PLANET */
+
+.hero-decoration {
+    width: 350px;
+    height: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.planet {
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 60px;
+    font-weight: bold;
+
+    color: white;
+
+    background:
+        radial-gradient(
+            circle at 30% 30%,
+            #f5c9da,
+            #d88ca9
+        );
+
+    box-shadow:
+        0 0 60px rgba(216, 140, 169, 0.4);
+}
+
+
+/* SECTION */
+
+.section {
+    padding: 110px 10%;
+}
+
+.pink-section {
+    background: #fff0f6;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title p {
+    color: #c9789b;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-size: 45px;
+}
+
+
+/* ABOUT */
+
+.about-content {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 350px 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.about-photo {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-placeholder {
+    width: 300px;
+    height: 380px;
+
+    border-radius: 150px 150px 30px 30px;
+
+    background: #e9a9c2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.about-text h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-text > p {
+    color: #806f76;
+    margin-bottom: 30px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.info-grid div {
+    padding: 20px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(201, 120, 155, 0.1);
+}
+
+.info-grid span {
+    color: #c9789b;
+    font-size: 12px;
+}
+
+
+/* CARDS */
+
+.card-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    padding: 35px;
+
+    background: white;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(201, 120, 155, 0.12);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #806f76;
+}
+
+
+/* PORTFOLIO */
+
+.portfolio-card {
+    padding: 35px;
+
+    border-radius: 25px;
+
+    background: white;
+
+    border: 1px solid #f0d8e2;
+
+    transition: 0.3s;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(201, 120, 155, 0.15);
+}
+
+.portfolio-card span {
+    color: #d88ca9;
+    font-size: 13px;
+}
+
+.portfolio-card h3 {
+    margin: 25px 0 15px;
+}
+
+.portfolio-card p {
+    color: #806f76;
+}
+
+
+/* TIMELINE */
+
+.timeline {
+    max-width: 800px;
+    margin: auto;
+}
+
+.timeline-item {
+    padding: 25px 30px;
+
+    margin-bottom: 20px;
+
+    border-left: 4px solid #d88ca9;
+
+    background: white;
+
+    border-radius: 0 15px 15px 0;
+
+    box-shadow: 0 5px 20px rgba(201, 120, 155, 0.1);
+}
+
+.timeline-item span {
+    color: #c9789b;
+    font-size: 13px;
+}
+
+.timeline-item h3 {
+    margin-top: 5px;
+}
+
+
+/* CONTACT */
+
+.contact-section {
+    background: #fff0f6;
+}
+
+.contact-grid {
+    max-width: 900px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.contact-card {
+    padding: 40px 20px;
+
+    text-align: center;
+
+    background: white;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+    color: #3d3035;
+
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+}
+
+.contact-card h3 {
+    color: #c9789b;
     margin-bottom: 10px;
 }
 
 
-/* =========================
-   HOME
-========================= */
-
-#home {
-    text-align: center;
-    background: #fff8fb;
-}
-
-#home h2 {
-    font-size: 48px;
-    margin-top: 40px;
-}
-
-#home p {
-    max-width: 700px;
-    margin: 15px auto;
-}
-
-
-/* =========================
-   LINK
-========================= */
-
-a {
-    color: #c9789b;
-}
-
-#home a {
-    display: inline-block;
-    margin: 20px 5px;
-    padding: 12px 24px;
-    background: #d88ca9;
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-}
-
-#home a:hover {
-    background: #c9789b;
-}
-
-
-/* =========================
-   ABOUT
-========================= */
-
-#about {
-    background: #ffffff;
-}
-
-#about p {
-    margin-bottom: 15px;
-}
-
-#about ul {
-    margin-left: 25px;
-}
-
-
-/* =========================
-   HOBBIES
-========================= */
-
-#hobbies {
-    background: #fff8fb;
-}
-
-#hobbies article {
-    background: white;
-    padding: 25px;
-    margin: 20px 0;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(201, 120, 155, 0.15);
-}
-
-
-/* =========================
-   PORTFOLIO
-========================= */
-
-#portfolio {
-    background: #ffffff;
-}
-
-#portfolio article {
-    background: #fff8fb;
-    padding: 25px;
-    margin: 20px 0;
-    border-left: 5px solid #d88ca9;
-    border-radius: 10px;
-}
-
-
-/* =========================
-   ACTIVITIES
-========================= */
-
-#activities {
-    background: #fff8fb;
-}
-
-#activities article {
-    background: white;
-    padding: 25px;
-    margin: 20px 0;
-    border-radius: 15px;
-}
-
-
-/* =========================
-   EDUCATION
-========================= */
-
-#education {
-    background: #ffffff;
-}
-
-#education ul {
-    margin-left: 25px;
-}
-
-#education li {
-    margin: 15px 0;
-}
-
-
-/* =========================
-   CONTACT
-========================= */
-
-#contact {
-    background: #fff8fb;
-    text-align: center;
-}
-
-#contact p {
-    margin: 15px 0;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer {
+    padding: 30px;
+
+    text-align: center;
+
     background: #3d3035;
     color: white;
-    text-align: center;
-    padding: 25px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .nav-menu {
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
 }
