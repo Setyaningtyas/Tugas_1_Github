@@ -1,0 +1,240 @@
+/* =========================
+   DASAR WEBSITE
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8fb;
+    color: #3d3035;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: #e9a9c2;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #ffffff;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #3d3035;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    padding: 80px 40px;
+    min-height: 300px;
+}
+
+section h2 {
+    color: #c9789b;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    color: #d88ca9;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+#home {
+    text-align: center;
+    background: #fff8fb;
+}
+
+#home h2 {
+    font-size: 48px;
+    margin-top: 40px;
+}
+
+#home p {
+    max-width: 700px;
+    margin: 15px auto;
+}
+
+
+/* =========================
+   LINK
+========================= */
+
+a {
+    color: #c9789b;
+}
+
+#home a {
+    display: inline-block;
+    margin: 20px 5px;
+    padding: 12px 24px;
+    background: #d88ca9;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+#home a:hover {
+    background: #c9789b;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+#about {
+    background: #ffffff;
+}
+
+#about p {
+    margin-bottom: 15px;
+}
+
+#about ul {
+    margin-left: 25px;
+}
+
+
+/* =========================
+   HOBBIES
+========================= */
+
+#hobbies {
+    background: #fff8fb;
+}
+
+#hobbies article {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(201, 120, 155, 0.15);
+}
+
+
+/* =========================
+   PORTFOLIO
+========================= */
+
+#portfolio {
+    background: #ffffff;
+}
+
+#portfolio article {
+    background: #fff8fb;
+    padding: 25px;
+    margin: 20px 0;
+    border-left: 5px solid #d88ca9;
+    border-radius: 10px;
+}
+
+
+/* =========================
+   ACTIVITIES
+========================= */
+
+#activities {
+    background: #fff8fb;
+}
+
+#activities article {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 15px;
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+#education {
+    background: #ffffff;
+}
+
+#education ul {
+    margin-left: 25px;
+}
+
+#education li {
+    margin: 15px 0;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact {
+    background: #fff8fb;
+    text-align: center;
+}
+
+#contact p {
+    margin: 15px 0;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #3d3035;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
