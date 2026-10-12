@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 4 JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="identitas">
+            <h2>Nama: ELISABET WULAN SETYANINGTYAS</h2>
+            <p>NIM: 255314166</p>
+            <p>Program Studi: Informatika</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Form Pilihan</h1>
+        <p class="deskripsi">Silakan isi data secara bertahap.</p>
+
+        <section class="card">
+            <h2>1. Data Pengguna</h2>
+
+            <form id="formData">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" placeholder="Masukkan nama kamu" required>
+
+                <label for="jumlah">Jumlah pilihan:</label>
+                <input type="number" id="jumlah" min="1" max="10"
+                       step="1" placeholder="Masukkan jumlah pilihan" required>
+
+                <button type="submit">OK</button>
+            </form>
+        </section>
+
+        <section class="card hidden" id="bagianPilihan">
+            <h2>2. Isi Pilihan</h2>
+            <p>Isi setiap kolom dengan pilihan yang kamu inginkan.</p>
+
+                <form id="formPilihan">
+        <div id="daftarInput"></div>
+            <button type="submit">Simpan Pilihan</button>
+        </form>
+        </section>
+
+        <section class="card hidden" id="bagianPemilihan">
+            <h2>3. Tentukan Jawaban</h2>
+
+            <label for="jenis">Jenis kontrol pilihan:</label>
+            <select id="jenis">
+                <option value="radio">Radio Button</option>
+                <option value="checkbox">Checkbox</option>
+                <option value="dropdown">Dropdown</option>
+            </select>
+
+            <div id="kontrolPilihan"></div>
+
+            <button type="button" id="tombolLanjut">
+                Lanjut
+            </button>
+        </section>
+
+        <section class="card hidden" id="bagianEmail">
+            <h2>4. Masukkan Email</h2>
+
+            <form id="formEmail">
+                <label for="email">Email:</label>
+                <input type="email" id="email"
+                       placeholder="contoh@email.com"
+                       required>
+
+                <button type="submit">Tampilkan Hasil</button>
+            </form>
+        </section>
+
+        <section class="card hidden" id="bagianHasil">
+            <h2>5. Hasil Akhir</h2>
+            <div id="hasil"></div>
+            <button type="button" id="tombolUlang">Ulangi</button>
+        </section>
+    </main>
+
+</body>
+</html>
